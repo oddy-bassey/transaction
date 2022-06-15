@@ -11,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
@@ -31,4 +33,12 @@ public class Withdrawal extends BaseEntity {
     @NotEmpty
     @Column
     private String customerName;
+
+    @NotNull
+    @Column
+    private BigDecimal amount;
+
+    @NotEmpty
+    @Column
+    private String description;
 }

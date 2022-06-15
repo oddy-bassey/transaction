@@ -11,7 +11,6 @@ import org.hibernate.annotations.Type;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -28,17 +27,13 @@ public class Transaction extends BaseEntity {
     @Type(type = "uuid-char")
     private UUID id;
 
+    @NotEmpty
+    @Column
+    private String associatedAccountId;
+
     @NotNull
     @Column
     private TransactionType transactionType;
-
-    @NotNull
-    @Column
-    private BigDecimal amount;
-
-    @NotEmpty
-    @Column
-    private String description;
 
     @OneToOne
     @Column
