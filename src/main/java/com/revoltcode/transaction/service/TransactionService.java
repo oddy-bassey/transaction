@@ -10,6 +10,6 @@ public interface TransactionService {
 
     void save(Transaction transaction);
     Optional<Transaction> findById(UUID id);
-    Optional<Transaction> findByAssociatedAccountId(String associatedAccountId);
+    List<Transaction> findByAssociatedAccountId(String associatedAccountId);
     List<Transaction> findAll();
 }

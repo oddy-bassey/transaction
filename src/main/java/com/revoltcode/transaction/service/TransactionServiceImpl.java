@@ -26,7 +26,7 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
-    public Optional<Transaction> findByAssociatedAccountId(String associatedAccountId) {
+    public List<Transaction> findByAssociatedAccountId(String associatedAccountId) {
         return transactionRepository.findByAssociatedAccountId(associatedAccountId);
     }
 
