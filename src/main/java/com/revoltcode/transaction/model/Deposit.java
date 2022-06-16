@@ -23,14 +23,6 @@ public class Deposit extends BaseEntity {
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
-    @NotEmpty
-    @Column
-    private String accountId;
-
-    @NotEmpty
-    @Column
-    private String customerName;
-
     @NotNull
     @Column
     private BigDecimal amount;

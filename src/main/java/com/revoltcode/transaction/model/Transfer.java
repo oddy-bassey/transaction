@@ -25,19 +25,11 @@ public class Transfer extends BaseEntity {
 
     @NotEmpty
     @Column
-    private String senderAccountId;
+    private String creditAccountId;
 
     @NotEmpty
     @Column
-    private String senderCustomerName;
-
-    @NotEmpty
-    @Column
-    private String receiverAccountId;
-
-    @NotEmpty
-    @Column
-    private String receiverCustomerName;
+    private String creditAccountName;
 
     @NotNull
     @Column

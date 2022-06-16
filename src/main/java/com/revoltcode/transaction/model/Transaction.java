@@ -29,7 +29,11 @@ public class Transaction extends BaseEntity {
 
     @NotEmpty
     @Column
-    private String associatedAccountId;
+    private String accountId;
+
+    @NotEmpty
+    @Column
+    private String accountName;
 
     @NotNull
     @Column
@@ -37,15 +41,15 @@ public class Transaction extends BaseEntity {
 
     @OneToOne
     @Column
-    Deposit deposit;
+    private Deposit deposit;
 
     @OneToOne
     @Column
-    Withdrawal withdrawal;
+    private Withdrawal withdrawal;
 
     @OneToOne
     @Column
-    Transfer transfer;
+    private Transfer transfer;
 
     @NotNull
     @Column
