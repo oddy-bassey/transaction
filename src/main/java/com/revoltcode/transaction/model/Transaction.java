@@ -1,7 +1,7 @@
 package com.revoltcode.transaction.model;
 
+import com.revoltcode.account.common.dto.TransactionType;
 import com.revoltcode.cqrs.core.domain.model.BaseEntity;
-import com.revoltcode.transaction.enumCategory.TransactionType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

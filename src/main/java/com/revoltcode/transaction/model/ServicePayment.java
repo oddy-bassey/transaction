@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Transfer extends BaseEntity {
+public class ServicePayment extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,23 +25,19 @@ public class Transfer extends BaseEntity {
 
     @NotEmpty
     @Column
-    private String senderAccountId;
+    private String accountId;
 
     @NotEmpty
     @Column
-    private String senderCustomerName;
-
-    @NotEmpty
-    @Column
-    private String receiverAccountId;
-
-    @NotEmpty
-    @Column
-    private String receiverCustomerName;
+    private String customerName;
 
     @NotNull
     @Column
     private BigDecimal amount;
+
+    @NotEmpty
+    @Column
+    private String serviceName;
 
     @NotEmpty
     @Column
