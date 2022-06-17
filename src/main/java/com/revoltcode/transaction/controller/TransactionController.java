@@ -37,7 +37,7 @@ public class TransactionController {
 
     @GetMapping("/byAccountId/{accountId}")
     public ResponseEntity<?> getTransactionByAccountId(@PathVariable("accountId") String accountId){
-        List<Transaction> transaction = transactionService.findByAssociatedAccountId(accountId);
+        List<Transaction> transaction = transactionService.findByAccountId(accountId);
 
         return new ResponseEntity<>(transaction, HttpStatus.OK);
     }

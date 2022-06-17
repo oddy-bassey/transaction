@@ -31,24 +31,18 @@ public class Transaction extends BaseEntity {
     @Column
     private String accountId;
 
-    @NotEmpty
-    @Column
-    private String accountName;
-
     @NotNull
+    @Enumerated(EnumType.STRING)
     @Column
     private TransactionType transactionType;
 
     @OneToOne
-    @Column
     private Deposit deposit;
 
     @OneToOne
-    @Column
     private Withdrawal withdrawal;
 
     @OneToOne
-    @Column
     private Transfer transfer;
 
     @NotNull
