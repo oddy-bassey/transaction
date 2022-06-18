@@ -12,4 +12,5 @@ public interface TransactionService {
     Optional<Transaction> findById(UUID id);
     List<Transaction> findByAccountId(String associatedAccountId);
     List<Transaction> findAll();
+    long getTransactionCount();
 }

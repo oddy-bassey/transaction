@@ -58,4 +58,9 @@ public class TransactionController {
         transactionService.save(transaction);
         return new ResponseEntity<>("transaction persisted successfully!", HttpStatus.OK);
     }
+
+    @GetMapping("/count")
+    public ResponseEntity<?> getCountOfTransactions(){
+        return new ResponseEntity<>(transactionService.getTransactionCount(), HttpStatus.OK);
+    }
 }

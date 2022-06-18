@@ -34,4 +34,9 @@ public class TransactionServiceImpl implements TransactionService {
     public List<Transaction> findAll() {
         return transactionRepository.findAll();
     }
+
+    @Override
+    public long getTransactionCount() {
+        return transactionRepository.count();
+    }
 }
