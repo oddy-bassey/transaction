@@ -48,7 +48,7 @@ public class TransactionController {
 
         Transaction transaction = Transaction.builder()
                 .accountId(event.getId())
-                .amount(BigDecimal.valueOf(event.getAmount()))
+                .amount(event.getAmount())
                 .description(event.getDescription())
                 .transactionType(event.getTransactionType())
                 .transactionTime(event.getTransactionTime())
