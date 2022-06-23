@@ -1,6 +1,5 @@
 package com.revoltcode.transaction;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revoltcode.account.common.dto.TransactionType;
 import com.revoltcode.transaction.model.Transaction;

@@ -12,12 +12,12 @@ below are the technologies used in developing the application
 * H2 Database (in memory)
 * Junit5
 
-Accessing customer APIs
+Accessing Transaction APIs
 -
 The bank transaction APIs can be accessed using the OpenAPI doc. This documentation is located on the route: **http://localhost:8087/swagger-ui/index.html** <br>
 ![alt text](https://github.com/oddy-bassey/transaction/blob/main/src/main/resources/screen_shots/transc_doc.PNG?raw=true)
 
-Accessing customer database (H2)
+Accessing Transaction database (H2)
 -
 This service makes use of H2 in memory database for storing the bank transaction data. The database can be accessed at **http://localhost:8087/h2-console/** <br>
 **Credentials**
